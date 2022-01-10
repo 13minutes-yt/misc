@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="nnnmenu" label="nnn">	
+
+<item label="Leafpad Desktop">	<action name="Execute"><execute>leafpad ~/Desktop/.sh</execute></action></item>
+<item label="Leafpad Downloads"><action name="Execute"><execute>leafpad /home/antix/Downloads/.sh</execute></action></item>
+<item label="Leafpad Scripts"><action name="Execute"><execute>leafpad ~/Documents/scripts/.sh</execute></action></item>
+	          </menu>	
+
+	<menu id="nnnmenu-57157" label="New Menu">	
+<item icon=" /usr/share/icons/papirus-antix/24x24/apps/firefox.png" label="xfe"><action name="Execute"><execute>xfe</execute></action></item>
+          </menu>	
+
+	<menu id="spacemenu" label="Monitor">	
+
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/gsd-xrandr.png" label="Enable monitor-Resolution"><action name="Execute"><execute>lxrandr</execute></action></item>
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/gsd-xrandr.png" label="HDMI monitor placement"><action name="Execute"><execute>arandr</execute></action></item>
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/pavucontrol.png" label="Monitor sound"><action name="Execute"><execute>pavucontrol</execute></action></item>
+	</menu>	
+	
+	<menu id="winmenu" label="winmenu">
+<item icon="/home/antix/Documents/icons/16-0-0-0-0.png" label="Total Commander"><action name="Execute"><execute>wine   '/home/antix/.wine/drive_c/totalcmd/TOTALCMD.EXE'</execute></action></item>	
+<item icon="/home/antix/Documents/icons/icons/323.png" label="Emeditor"><action name="Execute"><execute>wine  '/home/antix/.wine/drive_c/EmEditor11/EmEditor.exe'</execute></action></item>	
+<separator/>	
+	
+<item icon="/home/antix/Documents/icons/icons/162.png" label="Sumatra Pdf"><action name="Execute"><execute>wine  '/home/antix/.wine/drive_c/SumatraPDF.exe'</execute></action></item>	
+<separator/>	
+<item icon="/home/antix/Documents/icons/101-2-0-0-3.png" label="Powerpoint 2007"><action name="Execute"><execute>wine  '/home/antix/.wine/drive_c/Program Files/Microsoft Office/Office12/powerpnt.EXE'</execute></action></item>	
+<item icon="/home/antix/Documents/icons/103-0-0-0-5.png" label="Word 2007"><action name="Execute"><execute>wine  '/home/antix/.wine/drive_c/Program Files/Microsoft Office/Office12/winword.EXE'</execute></action></item>	
+<item icon="/home/antix/Documents/icons/6-0-0-0-3.png" label="Excel 2007"><action name="Execute"><execute>wine  '/home/antix/.wine/drive_c/Program Files/Microsoft Office/Office12/EXCEL.EXE'</execute></action></item>	
+<separator/>	
+<item icon="/home/antix/Documents/icons/101-2-0-0-0.png" label="Powerpoint 95"><action name="Execute"><execute>wine  '/home/antix/.wine/drive_c/office 95/powerpnt.EXE'</execute></action></item>	
+<item icon="/home/antix/Documents/icons/icons/246.png" label="Word 95"><action name="Execute"><execute>wine  '/home/antix/.wine/drive_c/office 95/winword.EXE'</execute></action></item>	
+<item icon="/home/antix/Documents/icons/icons/224.png" label="Excel 95"><action name="Execute"><execute>wine  '/home/antix/.wine/drive_c/office 95/EXCEL.EXE'</execute></action></item>	
+<item icon="/home/antix/Documents/icons/icons/260.png" label="Excel 97"><action name="Execute"><execute>wine '/home/antix/.wine/drive_c/excel97/EXCEL.EXE'</execute></action></item>	
+<item icon="/home/antix/Documents/icons/112.png" label="Katmouse"><action name="Execute"><execute>wine /home/antix/.wine/dosdevices/c:/KatMouse/KatMouse.exe</execute></action></item>	
+<separator/>	
+<item icon="/home/antix/Documents/icons/89-1-0-0-2.png" label="FastStone Capture"><action name="Execute"><execute>wine '/home/antix/.wine/dosdevices/c:/FastStone Capture/FSCapture.exe'</execute></action></item>	
+<item icon="/home/antix/Documents/icons/1000.png" label="I _View32"><action name="Execute"><execute>wine /home/antix/.wine/dosdevices/c:/i_view32.exe</execute></action></item>	
+<item icon="/home/antix/Documents/icons/m128.png" label="Meazure"><action name="Execute"><execute>wine 	/home/antix/.wine/dosdevices/c:/Program\ Files/Meazure/Meazure.exe</execute></action></item>
+<menu id="battery-menu" label="Battery status"  execute="~/.config/openbox/battery.sh" />	
+	</menu>
+	
+	<menu id="root-menu" label="Openbox 3">
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/terminal.png" label="Terminal emulator"><action name="Execute"><execute>x-terminal-emulator</execute></action></item>	
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/gedit.png" label="Gedit Text Editor"><action name="Execute"><execute>gedit</execute></action></item>	
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/thunar.png" label="Thunar File manager"><action name="Execute"><execute>thunar</execute></action></item>
+<menu id="virtualbox" label="Virtual Machines" execute="~/Documents/scripts/virtualbox.sh"/>
+<separator/>
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/youtube-dl.png" label="Download video clip"><action name="Execute"><execute> '/home/antix/Documents/scripts/video-download.sh'</execute></action></item>	
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/mpv.png" label="Play video from clpboard"><action name="Execute"><execute> '/home/antix/Documents/scripts/mpv-clipboard.sh'</execute></action></item>	
+<item icon="/usr/share/icons/MokshaArcGreen-Icons/actions/scalable/edit-cut.png" label="Videocut "><action name="Execute"><execute> '/home/antix/Documents/scripts/videocut.sh'</execute></action></item>
+<separator/>
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/flameshot.png" label="Flameshot"><action name="Execute"><execute>flameshot gui</execute></action></item>	
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/vokoscreen.png" label="vokoscreen"><action name="Execute"><execute>vokoscreen</execute></action></item>	
+<item icon="/usr/share/icons/hicolor/48x48/apps/vlc.png" label="VLC"><action name="Execute"><execute>vlc</execute></action></item>	
+<item icon="/home/antix/Programs/deadbeef_1.8.7-1_x86_64/deadbeef.png" label="Deadbeef"><action name="Execute"><execute>/home/antix/Programs/deadbeef_1.8.7-1_x86_64/./deadbeef</execute></action></item>	
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/firefox-esr.png" label="Firefox"><action name="Execute"><execute>firefox</execute></action></item>
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/tor.png" label="Tor browser"><action name="Execute"><execute>torbrowser-launcher</execute></action></item>
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/zoom-desktop.png" label="Zoom"><action name="Execute"><execute>zoom</execute></action></item>	
+<!-- This requires the presence of the 'openbox-menu' package to work -->	
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/telegram.png" label="Telegram"><action name="Execute"><execute> '/home/antix/Programs/Telegram'</execute></action></item>	
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/claws-mail.png" label="Claws Mail"><action name="Execute"><execute>claws-mail</execute>	</action></item>	
+<menu id="/Debian" icon="/usr/share/icons/papirus-antix/24x24/apps/debian-logo.png"/><separator/>
+	         <menu execute="/usr/bin/obamenu" id="applications-menu" icon="/usr/share/icons/papirus-antix/24x24/apps/applications-science.png" label="Applications"/>
+         <separator/>	
+<item icon="/home/antix/Documents/icons/idm.png" label="IDM consumption">	<action name="Execute"><execute>'/home/antix/Documents/scripts/IDM2.sh'</execute>	</action></item>	
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/obconf.png" lolabel="ObConf">	<action name="Execute"><execute>obconf</execute>	</action></item>	
+<item label="Reconfigure">	<action name="Reconfigure"/></item>
+<item icon="/usr/share/icons/papirus-antix/24x24/apps/system-restart.png" label="Restart">	<action name="Restart"/></item>
+<item icon="/home/antix/Documents/wallpapers/killwin.png" label="Kill WINDOWS">	<action name="Execute">	<execute>/home/antix/Documents/scripts/killwindows.sh</execute>	</action>	</item><separator/>	
+<item label="Exit">	<action name="Execute"><execute>/home/antix/Documents/scripts/yad-logout.sh</execute>	</action></item>	
+	    </menu>
+	    
+</openbox_menu>
